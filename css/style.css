@@ -96,17 +96,20 @@ body {
 }
 
 
-.btn--buy {
+.btn--buy,
+.btn--order {
   color: var(--white);
   background-color: var(--brown);
 }
 
-.btn--buy:hover {
+.btn--buy:hover,
+.btn--order:hover {
   color: var(--white);
   background-color: var(--brown-hover);
 }
 
-.btn--buy:active {
+.btn--buy:active,
+.btn--order:active {
   color: var(--white-opt);
   background-color: var(--brown-hover);
 }
@@ -506,6 +509,98 @@ body {
 .stock__price {
   width: 68px;
   text-align: right;
+}
+
+/*ORDER*/
+
+.order {
+  background-color: var(--gold);
+}
+
+.order__text {
+  margin: 82px 0 77px 0;
+  max-width: 650px;
+}
+
+.order-form {
+  max-width: 630px;
+}
+
+.order-form__block {
+  margin-bottom: 28px;
+}
+
+.order-form__label {
+  display: inline-block;
+  font-weight: bold;
+  line-height: 20px;
+  color: var(--black);
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+}
+
+.order-form__field,
+.order-form select,
+.order-form textarea {
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0, 0, 0, .1);
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  padding: 15px 20px;
+}
+
+.order-form__field:hover,
+.order-form select:hover,
+.order-form textarea:hover {
+  background-color: rgba(0, 0, 0, .15);
+}
+
+.order-form__field:focus,
+.order-form select:focus,
+.order-form textarea:focus {
+  font-weight: bold;
+  line-height: 20px;
+  background-color: var(--white);
+  color: var(--black);
+  text-transform: uppercase;
+}
+
+.order-form select {
+  text-transform: uppercase;
+  color: var(--grey);
+}
+
+.order-form textarea {
+  height: 126px;
+}
+
+.order-form__block--left {
+  float: left;
+  width: 289px;
+}
+
+.order-form__block--right {
+  float: right;
+  width: 289px;
+}
+
+.order-form__block input[type="checkbox"] {
+  margin: 0 20px 0 0;
+  width: 35px;
+  height: 35px;
+  border: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, .1);
+}
+
+.order-form__label--chekbox {
+  margin: 0;
+}
+
+.order-form input[type="submit"] {
+  margin-top: 20px;
 }
 
 /*FOOTER*/

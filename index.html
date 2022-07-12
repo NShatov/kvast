@@ -193,19 +193,21 @@
       <section class="section order">
         <div class="container">
           <h2 class="section__title">Заказать</h2>
-          <p class="text">Не ждите пока нас отрекламируют, как Вятский квас, и мы поднимем цены! Закажите настоящий крафтовый квас сейчас. При заказе от 10 баррелей — скидка 10%.</p>
+          <p class="order__text text">Не ждите пока нас отрекламируют, как Вятский квас, и мы поднимем цены! Закажите настоящий крафтовый квас сейчас. При заказе от 10 баррелей — скидка 10%.</p>
           <form class="order-form" action="#" method="POST">
             <div class="order-form__block">
               <label class="order-form__label" for="name">Представьтесь:</label>
               <input class="order-form__field" type="text" id="name" name="name">
             </div>
-            <div class="order-form__block order-form__block--left">
-              <label class="order-form__label" for="tel">Номер Телефона:</label>
-              <input class="order-form__field" type="tel" id="tel" name="tel">
-            </div>
-            <div class="order-form__block order-form__block--right">
-              <label class="order-form__label" for="add-tel">Доп номер:</label>
-              <input class="order-form__field" type="tel" id="add-tel" name="add-tel">
+            <div class="clearfix">
+              <div class="order-form__block order-form__block--left">
+                <label class="order-form__label" for="tel">Номер Телефона:</label>
+                <input class="order-form__field" type="tel" id="tel" name="tel">
+              </div>
+              <div class="order-form__block order-form__block--right">
+                <label class="order-form__label" for="add-tel">Доп номер:</label>
+                <input class="order-form__field" type="tel" id="add-tel" name="add-tel">
+              </div>
             </div>
             <div class="order-form__block">
               <label class="order-form__label" for="email">Email:</label>
@@ -218,15 +220,16 @@
                 <option value="2">От 10 до 15 баррелей в неделю</option>
                 <option value="3">От 15 до 20 баррелей в неделю</option>
               </select>
-              <div class="order-form__block">
+            </div>
+            <div class="order-form__block">
                 <label class="order-form__label" for="comment">Доп. комментарий</label>
                 <textarea name="comment" id="comment"></textarea>
               </div>
-              <div class="order-form__block">
+            <div class="order-form__block">
                 <input type="checkbox" id="subscribe">
-                <label class="order-form__label" for="subscribe">Я согласен получать квасную рассылку</label>
+                <label class="order-form__label order-form__label--chekbox" for="subscribe">Я согласен получать квасную рассылку</label>
               </div>
-            </div>
+            <input class="btn btn--order" type="submit" value="Отправить">
           </form>
         </div>
 
